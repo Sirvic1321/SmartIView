@@ -8,13 +8,17 @@ const menuitems = [
     title: "About",
     path: "/#about",
   },
+   // {
+  //   title: "Pricing",
+  //   path: "/#pricing",
+  // }, // Commented out
+   // {
+  //   title: "Team",
+  //   path: "/#team",
+  // }, // Commented out
   {
-    title: "Pricing",
-    path: "/#pricing",
-  },
-  {
-    title: "Team",
-    path: "/#team",
+    title: "Our Solutions",
+    path: "/solutions", // Updated to point to the new page
   },
   {
     title: "Contact",
@@ -24,22 +28,13 @@ const menuitems = [
     title: "Blog",
     path: "/blog",
   },
-  {
-    title: "Pages",
-    path: "javascript:void(0)",
-    children: [
-      { title: "About Page", path: "/about" },
-      { title: "Pricing Page", path: "/pricing" },
-      { title: "Contact Page", path: "/contact" },
-      { title: "Blog Grid Page", path: "/blog" },
-      { title: "Sign Up Page", path: "/signup" },
-      { title: "Sign In Page", path: "/signin" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
+   // {
+  //   title: "Pages",
+  //   path: "/#pages",
+  // }, // Commented out
+   // ...other menu items
 ];
 ---
-
 <header class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
   <div class="container">
     <div class="relative -mx-4 flex items-center justify-between">

@@ -1,0 +1,19 @@
+---
+import Team from '../components/Team.astro';
+import Aboutsection from '../components/Aboutsection.astro';
+import Breadcrumb from '../components/layout/Breadcrumb.astro';
+import Layout from '../layouts/Layout.astro';
+import CTAsection from '../components/CTAsection.astro';
+---
+
+<Layout
+  description="Learn more about SmartIView and our mission to revolutionize industries with intelligent IoT solutions."
+  title="About | SmartIView"
+>
+  <Breadcrumb>
+    <Fragment slot="title">About Us Page</Fragment>
+  </Breadcrumb>
+  <Aboutsection />
+  <CTAsection />
+  <Team />
+</Layout>
