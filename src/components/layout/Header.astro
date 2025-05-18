@@ -17,16 +17,18 @@ const menuitems = [
   //   path: "/#team",
   // }, // Commented out
   {
-    title: "Our Solutions",
-    path: "/solutions", // Updated to point to the new page
+   //  title: "Our Solutions",
+   //  path: "/solutions", 
+     // }, // Commented out
   },
   {
     title: "Contact",
     path: "/#contact",
   },
   {
-    title: "Blog",
-    path: "/blog",
+   //  title: "Blog",
+    // path: "/blog",
+   // }, // Commented out
   },
    // {
   //   title: "Pages",
@@ -42,13 +44,13 @@ const menuitems = [
         <a href="/" class="navbar-logo block w-full py-5">
           {(Astro.url.pathname === '/') ? (
             <img
-              src="/assets/logo/logo-white.svg"
-              alt="logo"
+              src="/assets/logo/logo-white.png"
+              alt="SmartIView Logo"
               class="header-logo w-full"
             />
           ) : (
-            <img src="/assets/logo/logo.svg" alt="logo" class="w-full dark:hidden" />
-            <img src="/assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block" />
+            <img src="/assets/logo/logo-white.png" alt="logo" class="w-full dark:hidden" />
+            <img src="/assets/logo/logo-white.png" alt="logo" class="w-full hidden dark:block" />
           )}
           
         </a>
@@ -171,6 +173,8 @@ const menuitems = [
             </span>
           </button>
           <div class="hidden sm:flex">
+            <!-- Commenting out the Sign In and Sign Up buttons -->
+<!--
             <a
               href="/signin"
               class={`${Astro.url.pathname === '/' ? 'loginBtn py-2 px-[22px] text-base font-medium text-white hover:opacity-70' : 'loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-white hover:opacity-70'}`}
