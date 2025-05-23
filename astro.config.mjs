@@ -4,6 +4,9 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
- 
-  integrations: [tailwind(), compress(),]
+
+  site: 'https://sirvic1321.github.io/SmartIView/',
+  base: '/SmartIView/',
+  integrations: [tailwind(), compress()],
 });
+  
